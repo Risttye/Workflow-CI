@@ -32,4 +32,4 @@ jobs:
       - name: Run MLProject Retraining
         run: |
           cd MLProject
-          mlflow run . --no-conda -P n_estimators=120 -P max_depth=8
+          mlflow run . --env-manager=local -P n_estimators=120 -P max_depth=8
